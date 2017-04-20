@@ -10,7 +10,7 @@
 	Course # and Title		        :		CISC 190 - Java
 	Class Meeting Time	     	 	:		TTH 1:00 - 4:05
 	Instructor		            	:		Professor Forman
-	Hours			               	:		1. 1
+/	Hours			               	:		1. 1
 	Difficulty		             	:		1. 1
 	Completion Date		     	 	:		04/20/17
 	File Name		            	:	      	Arrays_Handout
@@ -39,7 +39,7 @@
 
 
 *******************************************************************************
-********************************************************************************
+********************************************************************************/
 import javax.swing.*;
 import java.util.*;
 
@@ -115,6 +115,7 @@ public class Arrays_Handout
 // 				     +"The integer list is " + num.length + "numbers long \n"  // should say 3
 // 				     + num[0] + "," +num[1] + "," +num[2] +"\n"  //should say 100, 200, 0
 // 				     + str[0] + str[1] + str[2]);  //shoud say java is awesome
+		object.array_examples();
 		
 		
 	}
