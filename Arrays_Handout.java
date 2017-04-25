@@ -107,6 +107,8 @@ public class Arrays_Handout
 		
 		object.showArrayListsExample();
 		
+		object.array_examples();
+		
 		
 
 		
@@ -225,6 +227,89 @@ public class Arrays_Handout
          JOptionPane.showMessageDialog(frame,"Element #"+(x+1)+": "+list.get(x));
       }
       
+   }
+	   //*********************************************************************************************** 
+    //NAME: array_list_array_examples 
+    //DESCRIPTION: Displays all types of arrays
+    //BY: Daimeon Rodriguez
+    //*********************************************************************************************** 
+   public void array_examples(){
+       
+       Icon icon1 = new ImageIcon("what.gif");
+       
+       //As mentioned above in the method return int array
+       // you can determine the size of a array before hand 
+       // or you can also have the user initailize the size of 
+       // any array by getting input
+       String input = 
+                      (String) JOptionPane.showInputDialog(null, "How big would you like to have the arrays?", "How Big?", 
+                               JOptionPane.INFORMATION_MESSAGE,icon1,null, "5");
+                               int size = Integer.parseInt(input);
+       
+       
+       //Here are the diffrent typed of arrays with all primitive data values
+       
+       
+            //byte array stores integers from values -128 to 127
+                byte[] byte_array = new byte[size];
+                
+                
+            //Short array stores integers from values of -32,769 to 32,767
+                short[] short_array = new short[size];
+                
+                
+            // int array stores integers from vales of -2,147,483,648 to -2,147,483,687
+                int[] int_array = new int[size];
+                
+                
+            //long array stores integers from values of -9,223,372,036,854 to 9,223,372,036,853
+                long[] long_array = new long[size];
+                
+                
+            //float array stores integers from values of 3.4 X 10^-38 to 3.4 10^38
+            // Note float has a 7 digit accuracy
+                float[] float_array = new float[size];
+                
+                
+            //double array stores integers from values of -1.7 X 10^-308 to 1.7 X 10^308
+            // Note double has a 15 digit accuracy
+                double[] double_array = new double[size];
+                
+                
+        //Here are arrays that store alphabetic chracters 
+                
+            //Char values are Characters only store one character per subscript
+                char[] char_array = new char[size];
+                
+                
+            //String array stores String type data
+                String[] string_array = new String[size];
+                
+                
+            //Array List has no preset determination on size.
+                ArrayList<String> array_list = new ArrayList<>();
+                
+
+        //Here you can do something crazy by nesting a JOptionPane within a 
+        //Integer Parse, that has a nested JOptionPane that's casted to a String
+        
+        
+        //Creates a new String array and initalized the size of the array By getting information from the user by prompting for size
+        
+        String[] crazy = new String[Integer.parseInt((String) JOptionPane.showInputDialog(null, "Enter Number:", "Enter Number", JOptionPane.INFORMATION_MESSAGE,icon1,null, "50"))];
+        
+        JOptionPane.showInputDialog(null, "Here are the array sizes"
+                + "Byte: " + byte_array.length
+                + "Short: " + short_array.length
+                + "Int: " + int_array.length
+                + "Long: " + long_array.length
+                + "Float " + float_array.length
+                + "Double: " + double_array.length
+                + "Char: " + char_array.length
+                + "String: " + string_array.length
+                + "ArrayList: " + array_list.size()
+                + "Crazy String Array: " + crazy.length);
+       
    }
    
    /*****************************************************************************/
